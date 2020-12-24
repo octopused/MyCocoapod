@@ -10,6 +10,8 @@
 		7ED75610259327C70080C373 /* MyCocoapod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED75606259327C70080C373 /* MyCocoapod.framework */; };
 		7ED75615259327C70080C373 /* MyCocoapodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75614259327C70080C373 /* MyCocoapodTests.swift */; };
 		7ED75617259327C70080C373 /* MyCocoapod.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ED75609259327C70080C373 /* MyCocoapod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ED75623259327D30080C373 /* MyCocoapodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75622259327D30080C373 /* MyCocoapodProtocol.swift */; };
+		7ED75627259327DC0080C373 /* MyCococapodClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75626259327DC0080C373 /* MyCococapodClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		7ED7560F259327C70080C373 /* MyCocoapodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCocoapodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED75614259327C70080C373 /* MyCocoapodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCocoapodTests.swift; sourceTree = "<group>"; };
 		7ED75616259327C70080C373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ED75622259327D30080C373 /* MyCocoapodProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCocoapodProtocol.swift; sourceTree = "<group>"; };
+		7ED75626259327DC0080C373 /* MyCococapodClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCococapodClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				7ED75609259327C70080C373 /* MyCocoapod.h */,
 				7ED7560A259327C70080C373 /* Info.plist */,
+				7ED75622259327D30080C373 /* MyCocoapodProtocol.swift */,
+				7ED75626259327DC0080C373 /* MyCococapodClass.swift */,
 			);
 			path = MyCocoapod;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 				TargetAttributes = {
 					7ED75605259327C70080C373 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					7ED7560E259327C70080C373 = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED75627259327DC0080C373 /* MyCococapodClass.swift in Sources */,
+				7ED75623259327D30080C373 /* MyCocoapodProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		7ED7561B259327C70080C373 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2P4458WF47;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ruslan.MyCocoapod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +376,7 @@
 		7ED7561C259327C70080C373 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2P4458WF47;
@@ -389,6 +401,7 @@
 		7ED7561E259327C70080C373 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2P4458WF47;
 				INFOPLIST_FILE = MyCocoapodTests/Info.plist;
@@ -407,6 +420,7 @@
 		7ED7561F259327C70080C373 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2P4458WF47;
 				INFOPLIST_FILE = MyCocoapodTests/Info.plist;
