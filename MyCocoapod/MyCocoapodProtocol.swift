@@ -8,7 +8,5 @@
 import Foundation
 
 public protocol MyCocoapodProtocol {
-    func some() {
-    
-    }
+    func some()
 }

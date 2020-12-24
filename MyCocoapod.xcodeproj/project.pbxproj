@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7ED75610259327C70080C373 /* MyCocoapod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED75606259327C70080C373 /* MyCocoapod.framework */; };
 		7ED75615259327C70080C373 /* MyCocoapodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75614259327C70080C373 /* MyCocoapodTests.swift */; };
-		7ED75617259327C70080C373 /* MyCocoapod.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ED75609259327C70080C373 /* MyCocoapod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7ED75623259327D30080C373 /* MyCocoapodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75622259327D30080C373 /* MyCocoapodProtocol.swift */; };
 		7ED75627259327DC0080C373 /* MyCococapodClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75626259327DC0080C373 /* MyCococapodClass.swift */; };
 /* End PBXBuildFile section */
@@ -26,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		7ED75606259327C70080C373 /* MyCocoapod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCocoapod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7ED75609259327C70080C373 /* MyCocoapod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCocoapod.h; sourceTree = "<group>"; };
 		7ED7560A259327C70080C373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED7560F259327C70080C373 /* MyCocoapodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCocoapodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED75614259327C70080C373 /* MyCocoapodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCocoapodTests.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 		7ED75608259327C70080C373 /* MyCocoapod */ = {
 			isa = PBXGroup;
 			children = (
-				7ED75609259327C70080C373 /* MyCocoapod.h */,
 				7ED7560A259327C70080C373 /* Info.plist */,
 				7ED75622259327D30080C373 /* MyCocoapodProtocol.swift */,
 				7ED75626259327DC0080C373 /* MyCococapodClass.swift */,
@@ -99,7 +96,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ED75617259327C70080C373 /* MyCocoapod.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
